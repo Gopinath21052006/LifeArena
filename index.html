@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeArena – Personal Book Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book"></i>
+                    LifeArena
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#books">My Books</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to My Personal Book Gallery</h1>
+            <p>Discover my collection of books, available for reading online or downloading to your device.</p>
+            <a href="#books" class="btn btn-outline">Browse Books</a>
+        </div>
+    </section>
+
+    <section id="books">
+        <div class="container">
+            <h2 class="section-title">My Books</h2>
+            <div class="books-grid" id="books-container">
+                <!-- Books will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About the Author</h2>
+            <div class="about-content">
+                <div class="author-photo">
+                    <img src="images/Profile photo.jpeg" alt="Author Photo">
+                </div>
+                <div class="author-info">
+                    <h2>Gopinath </h2>
+                    <p>Hello! I'm a passionate writer who loves to share knowledge and stories through my books. My journey in writing began over a decade ago, and since then, I've published several works across different genres.</p>
+                    <p>My goal is to create content that inspires, educates, and entertains readers from all walks of life. Each book in my collection represents a piece of my journey and a topic I'm deeply passionate about.</p>
+                    <div class="contact-info">
+                        <a href="mailto:gopin6038@gmail.com"><i class="fas fa-envelope"></i> gopin6038@gmail.com </a>
+                        <a href="https://gopinath21052006.github.io/Portfolio/"><i class="fas fa-globe"></i> Gopinath/portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <h3>LifeArena</h3>
+                <p>Your personal digital bookshelf online</p>
+                <div class="social-links">
+                    <a href="https://github.com/Gopinath21052006"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/lb_gopinath?igsh=M2xibWVqY3AwZ2d6"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gopinath21052006/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="copyright">&copy; 2025 LifeArena. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Preview Modal -->
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Book Preview</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <div id="pdf-preview" style="display: none;">
+                    <canvas id="pdf-canvas"></canvas>
+                    <div class="pdf-controls">
+                        <button id="prev-page">Previous</button>
+                        <span id="page-num">Page: 1</span>
+                        <button id="next-page">Next</button>
+                    </div>
+                </div>
+                <div id="epub-preview" style="display: none;">
+                    <div id="epub-viewer"></div>
+                </div>
+                <div id="no-preview">
+                    <p>Preview not available for this book format.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+    
+    <!-- Include EPUB.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
