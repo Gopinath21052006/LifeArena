@@ -6,5 +6,12 @@
     "cover": "images/covers/book cover.jpg",
     "file": "book/storybook1.pdf",
     "format": "pdf"
+  },{
+    "title": "Nightmare Dream",
+    "author": "GOPINATH",
+    "description": "Jiraiya, a grieving father lost between worlds, chases his stolen daughter through haunting dreams and parallel realities, discovering love, loss, and the fragile hope that binds every universe together.",
+    "cover": "images/covers/NIGHTMARE_DREAM(book_cover).jpg",
+    "file": "book/NIGHTMARE_DREAM(story_book_2).pdf",
+    "format": "pdf"
   }
 ]
