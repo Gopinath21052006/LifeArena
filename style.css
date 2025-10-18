@@ -6,7 +6,7 @@
     --dark-color: #34495e;
     --text-color: #333;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 * {
@@ -20,6 +20,14 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: #f9f9f9;
+    opacity: 0;
+    animation: fadeInBody 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes fadeInBody {
+    to {
+        opacity: 1;
+    }
 }
 
 header {
@@ -30,6 +38,14 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    transform: translateY(-100%);
+    animation: slideDownHeader 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+}
+
+@keyframes slideDownHeader {
+    to {
+        transform: translateY(0);
+    }
 }
 
 .container {
@@ -49,11 +65,23 @@ header {
     font-weight: 700;
     display: flex;
     align-items: center;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out 0.5s forwards;
 }
 
 .logo i {
     margin-right: 10px;
     color: var(--primary-color);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
 }
 
 nav ul {
@@ -63,6 +91,21 @@ nav ul {
 
 nav ul li {
     margin-left: 1.5rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.6s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.8s; }
+nav ul li:nth-child(4) { animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 nav ul li a {
@@ -87,10 +130,21 @@ nav ul li a::after {
     height: 2px;
     background-color: var(--primary-color);
     transition: var(--transition);
+    transform-origin: left;
 }
 
 nav ul li a:hover::after {
     width: 100%;
+    animation: lineExpand 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes lineExpand {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 .hero {
@@ -100,17 +154,45 @@ nav ul li a:hover::after {
     color: white;
     padding: 5rem 0;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s forwards;
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto 2rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.6s forwards;
 }
 
 .btn {
@@ -125,11 +207,32 @@ nav ul li a:hover::after {
     cursor: pointer;
     transition: var(--transition);
     box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s forwards;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
 }
 
 .btn:hover {
     background-color: #2980b9;
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-outline {
@@ -140,16 +243,30 @@ nav ul li a:hover::after {
 .btn-outline:hover {
     background-color: white;
     color: var(--secondary-color);
+    transform: translateY(-3px) scale(1.05);
 }
 
 section {
     padding: 4rem 0;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUpSection 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes fadeInUpSection {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
 }
 
 .section-title::after {
@@ -157,10 +274,17 @@ section {
     position: absolute;
     bottom: -10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scaleX(0);
     width: 80px;
     height: 4px;
     background-color: var(--primary-color);
+    animation: expandLine 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s forwards;
+}
+
+@keyframes expandLine {
+    to {
+        transform: translateX(-50%) scaleX(1);
+    }
 }
 
 .books-grid {
@@ -175,16 +299,50 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    opacity: 0;
+    transform: translateY(50px) rotateX(15deg);
+    animation: cardEntrance 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
+@keyframes cardEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+    }
+}
+
+.book-card:nth-child(1) { animation-delay: 0.1s; }
+.book-card:nth-child(2) { animation-delay: 0.2s; }
+.book-card:nth-child(3) { animation-delay: 0.3s; }
+.book-card:nth-child(4) { animation-delay: 0.4s; }
+.book-card:nth-child(5) { animation-delay: 0.5s; }
+.book-card:nth-child(6) { animation-delay: 0.6s; }
+
 .book-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) scale(1.02) rotateZ(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .book-cover {
     height: 620px;
     overflow: hidden;
+    position: relative;
+}
+
+.book-cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.1) 100%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.book-card:hover .book-cover::after {
+    opacity: 1;
 }
 
 .book-cover img {
@@ -192,42 +350,80 @@ section {
     height: 100%;
     object-fit: cover;
     transition: var(--transition);
+    filter: grayscale(0.1);
 }
 
 .book-card:hover .book-cover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 .book-info {
     padding: 1.5rem;
+    background: white;
+    position: relative;
+    z-index: 2;
 }
 
 .book-title {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.book-card:hover .book-title {
+    color: var(--primary-color);
 }
 
 .book-author {
     color: var(--primary-color);
     font-weight: 500;
     margin-bottom: 1rem;
+    transform: translateX(-10px);
+    opacity: 0;
+    animation: slideInRight 0.5s ease-out 0.5s forwards;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .book-description {
     color: #666;
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.7s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .book-actions {
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .book-actions .btn {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    flex: 1;
     padding: 0.6rem 1rem;
     font-size: 0.9rem;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.book-actions .btn:hover {
+    transform: translateY(-2px) scale(1.05);
 }
 
 .btn-secondary {
@@ -236,6 +432,7 @@ section {
 
 .btn-secondary:hover {
     background-color: #1a252f;
+    transform: translateY(-2px) scale(1.05);
 }
 
 .about-section {
@@ -253,6 +450,16 @@ section {
     flex: 1;
     min-width: 300px;
     text-align: center;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s forwards;
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .author-photo img {
@@ -262,11 +469,22 @@ section {
     object-fit: cover;
     border: 5px solid white;
     box-shadow: var(--shadow);
+    transition: var(--transition);
+    filter: grayscale(0.2);
+}
+
+.author-photo:hover img {
+    transform: scale(1.05) rotate(5deg);
+    filter: grayscale(0);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .author-info {
     flex: 2;
     min-width: 300px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s forwards;
 }
 
 .author-info h2 {
@@ -276,10 +494,19 @@ section {
 
 .author-info p {
     margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
 }
+
+.author-info p:nth-child(1) { animation-delay: 0.7s; }
+.author-info p:nth-child(2) { animation-delay: 0.8s; }
+.author-info p:nth-child(3) { animation-delay: 0.9s; }
 
 .contact-info {
     margin-top: 2rem;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 1s forwards;
 }
 
 .contact-info a {
@@ -288,14 +515,34 @@ section {
     margin-right: 1.5rem;
     font-weight: 500;
     transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-info a:hover {
-    color: var(--secondary-color);
+.contact-info a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.contact-info a:hover::after {
+    width: 100%;
 }
 
 .contact-info i {
     margin-right: 8px;
+    transition: var(--transition);
+}
+
+.contact-info a:hover i {
+    transform: scale(1.2) translateX(3px);
 }
 
 footer {
@@ -303,6 +550,8 @@ footer {
     color: white;
     padding: 2rem 0;
     text-align: center;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
 }
 
 .footer-content {
@@ -320,10 +569,12 @@ footer {
     font-size: 1.5rem;
     margin: 0 1rem;
     transition: var(--transition);
+    display: inline-block;
 }
 
 .social-links a:hover {
     color: var(--primary-color);
+    transform: translateY(-5px) scale(1.2);
 }
 
 .copyright {
@@ -343,6 +594,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     overflow: auto;
+    opacity: 0;
+    animation: modalFadeIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes modalFadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-content {
@@ -352,12 +611,14 @@ footer {
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    animation: modalFade 0.3s;
+    transform: scale(0.8) translateY(-50px);
+    animation: modalSlideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
-@keyframes modalFade {
-    from {opacity: 0; transform: translateY(-50px);}
-    to {opacity: 1; transform: translateY(0);}
+@keyframes modalSlideIn {
+    to {
+        transform: scale(1) translateY(0);
+    }
 }
 
 .modal-header {
@@ -379,10 +640,14 @@ footer {
     cursor: pointer;
     color: #777;
     transition: var(--transition);
+    padding: 5px;
+    border-radius: 50%;
 }
 
 .close-modal:hover {
     color: var(--accent-color);
+    background-color: #f5f5f5;
+    transform: rotate(90deg);
 }
 
 .modal-body {
@@ -395,6 +660,8 @@ footer {
     width: 100%;
     border: 1px solid #ddd;
     margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.3s forwards;
 }
 
 .pdf-controls {
@@ -403,6 +670,8 @@ footer {
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.5s forwards;
 }
 
 .pdf-controls button {
@@ -412,10 +681,12 @@ footer {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .pdf-controls button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 /* EPUB Preview Styles */
@@ -423,6 +694,25 @@ footer {
     width: 100%;
     height: 600px;
     border: 1px solid #ddd;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out 0.3s forwards;
+}
+
+/* Scroll animations */
+.fade-in-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fade-in-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects for interactive elements */
+.book-card, .btn, .author-photo img, .social-links a, .contact-info a {
+    will-change: transform;
 }
 
 /* Responsive design */
@@ -435,10 +725,14 @@ footer {
     nav ul {
         margin-top: 1rem;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     nav ul li {
-        margin: 0 0.75rem;
+        margin: 0.5rem;
+        opacity: 1;
+        transform: none;
+        animation: none;
     }
 
     .hero {
@@ -466,5 +760,20 @@ footer {
     .book-actions .btn {
         width: 100%;
         text-align: center;
+    }
+
+    /* Adjust animations for mobile */
+    .book-card {
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+}
+
+/* Reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
