@@ -60,6 +60,8 @@ function renderBooks(books) {
                 <h3 class="book-title">${book.title}</h3>
                 <p class="book-author">by ${book.author}</p>
                 <p class="book-description">${book.description}</p>
+                <p class="book-upload-date">${book.upload_date}</p>
+                <br>
                 <div class="book-actions">
                     <a href="${book.file}" class="btn" download>Download</a>
                     <button class="btn btn-secondary preview-btn" data-book='${JSON.stringify(book).replace(/'/g, "&#39;")}'>Preview</button>

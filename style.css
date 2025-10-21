@@ -406,6 +406,21 @@ section {
     }
 }
 
+.book-upload-date {
+    color: #666;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.book-upload-date::before {
+    content: "📅";
+    font-size: 0.8rem;
+}
+
 .book-actions {
     display: flex;
     justify-content: space-between;

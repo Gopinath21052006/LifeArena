@@ -5,13 +5,16 @@
     "description": "Gopinath, born under a world-ending sky, grows up fearing the end, but with Mira’s guidance, he learns to live fully, face challenges with courage, help his village, and discover love and hope even in the shadow of doom.",
     "cover": "images/covers/book cover.jpg",
     "file": "book/storybook1.pdf",
-    "format": "pdf"
+    "format": "pdf",
+    "upload_date":"03/10/2025"
   },{
     "title": "Nightmare Dream",
     "author": "GOPINATH",
     "description": "Jiraiya, a grieving father lost between worlds, chases his stolen daughter through haunting dreams and parallel realities, discovering love, loss, and the fragile hope that binds every universe together.",
     "cover": "images/covers/NIGHTMARE_DREAM(book_cover).jpg",
     "file": "book/NIGHTMARE_DREAM(story_book_2).pdf",
-    "format": "pdf"
+    "format": "pdf",
+    "upload_date":"14/10/2025"
+
   }
 ]
