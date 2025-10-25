@@ -15,6 +15,14 @@
     "file": "book/NIGHTMARE_DREAM(story_book_2).pdf",
     "format": "pdf",
     "upload_date":"14/10/2025"
+  },{
+    "title": "A Night Between Sunset and Sunrise",
+    "author": "GOPINATH",
+    "description": "One night. One act of courage. Two strangers. A life changed forever. Between rain, leaves, and sunrise, hearts meet, destiny unfolds, and love quietly rewrites everything. Will you witness their journey?",
+    "cover": "images/covers/A_Night_Between_Sunset_and_Sunrise(book cover).jpg",
+    "file": "book/A_Night_Between_Sunset_and_Sunrise(story_book3).pdf",
+    "format": "pdf",
+    "upload_date": "25/10/2025"
+}
 
-  }
 ]
