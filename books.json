@@ -23,6 +23,16 @@
     "file": "book/A_Night_Between_Sunset_and_Sunrise(story_book3).pdf",
     "format": "pdf",
     "upload_date": "25/10/2025"
+},
+{
+    "title": "THE KEY OF FATE",
+    "author": "Gopinath R.",
+    "description": "A high-intensity sci-fi thriller about Arin, a father fighting against NASA’s darkest secrets, mutated human weapons, and a collapsing world—risking everything to save his family and uncover the truth behind a key that controls the fate of Earth.",
+    "cover": "images/covers/THE_KEY_OF_FATE.jpg",
+    "file": "book/THE_KEY_OF_FATE(4).pdf",
+    "format": "pdf",
+    "upload_date": "06/12/2025"
 }
+
 
 ]
