@@ -32,7 +32,17 @@
     "file": "book/THE_KEY_OF_FATE(4).pdf",
     "format": "pdf",
     "upload_date": "06/12/2025"
+},
+{
+    "title": "WHAT IS LIFE",
+    "author": "Gopinath R.",
+    "description": "A gentle, reflective story about youth, responsibility, love, and quiet struggles. Through the lives of Rohan and Varun, the book explores how life often moves differently from our expectations, teaching us that true meaning is found in small moments, kindness, and inner peace.",
+    "cover": "images/covers/WHAT_IS_LIFE.png",
+    "file": "book/What_is_Life.pdf",
+    "format": "pdf",
+    "upload_date": "13/01/2026"
 }
+
 
 
 ]
