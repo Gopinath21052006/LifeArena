@@ -6,6 +6,8 @@
     <title>LifeArena – Personal Book Gallery</title>
     <link rel="shortcut icon" href="/images/book.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="godmode.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -107,6 +109,13 @@
             </div>
         </div>
     </div>
+    <div id="radioBtn">🎵</div>
+
+<div id="radioPanel">
+  <div id="radioMessages"></div>
+  <input id="radioInput" placeholder="Type: play, pause, next, volume 50" />
+</div>
+
 
     <!-- Include PDF.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
@@ -114,6 +123,8 @@
     <!-- Include EPUB.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
     
+    <audio id="bgPlayer"></audio>
     <script src="script.js"></script>
+
 </body>
 </html>
