@@ -515,8 +515,10 @@ function setupDragAndDrop() {
     goodbyes: ["bye", "goodbye", "see you", "exit"]
   };
 
+  console.log("FAQ fetch test:", location.href);
+
   function loadFAQ() {
-    fetch("./faq.json")
+    fetch("./FAQ.json")
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
