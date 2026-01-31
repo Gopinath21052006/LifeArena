@@ -110,11 +110,24 @@
         </div>
     </div>
     <div id="radioBtn">🎵</div>
+    
 
 <div id="radioPanel">
   <div id="radioMessages"></div>
   <input id="radioInput" placeholder="Type: play, pause, next, volume 50" />
 </div>
+
+<div id="musicPopup" class="music-popup hidden">
+  <button class="close-music" title="Close">✖</button>
+
+  <button onclick="RadioBot.playRandom()">▶️</button>
+  <button onclick="RadioBot.pause()">⏸️</button>
+  <button onclick="RadioBot.next()">⏭️</button>
+  <input type="range" min="0" max="100" value="40"
+    onchange="RadioBot.setVolume(this.value)">
+</div>
+
+
 
 
     <!-- Include PDF.js library -->
@@ -125,6 +138,7 @@
     
     <audio id="bgPlayer"></audio>
     <script src="script.js"></script>
+    <script type="module" src="/js/radio.js"></script>
 
 </body>
 </html>

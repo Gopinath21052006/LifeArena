@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "project": "LifeArena – BookVault",
+    "type": "book_faqs",
+    "bookTitle": "THE END OF THE WORLD",
+    "author": "Gopinath",
+    "version": "1.1",
+    "lastUpdated": "2026-01-31",
+    "publishedDate": "03/10/2025"
+  },
+
+  "faqs": [
+    {
+      "id": "aboutBook",
+      "question": "What is this book?",
+      "keywords": [
+        "what is this book",
+        "what is the story",
+        "tell me about the book",
+        "tell me about the end of the world",
+        "story information",
+        "about this book"
+      ],
+      "answer": "📘 This book is a coming-of-age story about Gopinath, born under a world-ending sky, who grows up fearing the apocalypse but learns through Mira's guidance to live fully, face challenges with courage, help his village, and discover love and hope even in the shadow of doom."
+    },
+
+    {
+      "id": "author",
+      "question": "Who wrote this book?",
+      "keywords": [
+        "who wrote this book",
+        "who is the author",
+        "author of this book",
+        "creator",
+        "written by whom"
+      ],
+      "answer": "✍️ This book was written by Gopinath — drawing from personal themes of fear, growth, and finding hope in uncertain times."
+    },
+
+    {
+      "id": "format",
+      "question": "What format is this book available in?",
+      "keywords": [
+        "book format",
+        "pdf or epub",
+        "file type",
+        "book file",
+        "available format"
+      ],
+      "answer": "📄 This book is available in both PDF and EPUB formats."
+    },
+
+    {
+      "id": "readOnline",
+      "question": "Can I read this book online?",
+      "keywords": [
+        "read online",
+        "read in browser",
+        "open in browser",
+        "preview book",
+        "can i read online"
+      ],
+      "answer": "📖 Yes. You can read this book directly in your browser through the LifeArena website."
+    },
+
+    {
+      "id": "download",
+      "question": "Can I download this book?",
+      "keywords": [
+        "download book",
+        "save book",
+        "offline reading",
+        "book download",
+        "can i download"
+      ],
+      "answer": "⬇️ Yes. This book can be downloaded to your device for offline reading anytime."
+    },
+
+    {
+      "id": "mobile",
+      "question": "Does this book work on mobile devices?",
+      "keywords": [
+        "mobile support",
+        "phone",
+        "tablet",
+        "read on phone",
+        "mobile friendly"
+      ],
+      "answer": "📱 Yes. This book is fully responsive and works smoothly on phones, tablets, and desktops."
+    },
+
+    {
+      "id": "offline",
+      "question": "Do I need internet to read this book?",
+      "keywords": [
+        "internet required",
+        "offline reading",
+        "without internet",
+        "read offline",
+        "need internet"
+      ],
+      "answer": "🌐 Internet is only needed to access the website. Once downloaded, you can read it completely offline."
+    },
+
+    {
+      "id": "mood",
+      "question": "What kind of mood is this story?",
+      "keywords": [
+        "story mood",
+        "emotional book",
+        "calm or intense",
+        "emotional story",
+        "what kind of story"
+      ],
+      "answer": "🎭 This story has a reflective, hopeful mood — it's about overcoming fear and finding meaning despite existential threats."
+    },
+
+    {
+      "id": "emotionalLevel",
+      "question": "Will this book make me emotional?",
+      "keywords": [
+        "will this book make me emotional",
+        "will i cry",
+        "sad story",
+        "emotional impact",
+        "is this emotional"
+      ],
+      "answer": "💔 It might touch you deeply, but in a hopeful way. It explores fear and growth, not despair."
+    },
+
+    {
+      "id": "readingTime",
+      "question": "How long does it take to read this book?",
+      "keywords": [
+        "reading time",
+        "how long does it take",
+        "take to read",
+        "how long to read",
+        "book length",
+        "reading duration"
+      ],
+      "answer": "⏱️ It's a medium-length read — perfect for a few thoughtful sittings."
+    },
+
+    {
+      "id": "lateNightRead",
+      "question": "Is this a good late-night read?",
+      "keywords": [
+        "late night read",
+        "good late night read",
+        "read at night",
+        "night reading",
+        "book to read at night",
+        "quiet read"
+      ],
+      "answer": "🌙 Yes, especially if you're in a reflective mood. Its tone is calm and meaningful."
+    },
+
+    {
+      "id": "bestTime",
+      "question": "When is the best time to read this book?",
+      "keywords": [
+        "best time to read",
+        "when to read",
+        "best time for reading",
+        "good time to read"
+      ],
+      "answer": "☕ Anytime you're feeling reflective, uncertain, or in need of quiet hope."
+    },
+
+    {
+      "id": "thinkingAfter",
+      "question": "Will this book make me think?",
+      "keywords": [
+        "make me think",
+        "will this book make me think",
+        "deep thinking",
+        "thought provoking",
+        "mindful reading"
+      ],
+      "answer": "🧠 Absolutely. It invites reflection on fear, meaning, and how we choose to live."
+    },
+
+    {
+      "id": "stayWithYou",
+      "question": "Does this story stay with you?",
+      "keywords": [
+        "stay with you",
+        "stays with you",
+        "memorable story",
+        "after reading feeling",
+        "lingering story"
+      ],
+      "answer": "🍃 Yes. It lingers quietly — not loudly, but deeply."
+    },
+
+    {
+      "id": "reRead",
+      "question": "Is this book worth re-reading?",
+      "keywords": [
+        "worth rereading",
+        "read again",
+        "re read",
+        "second read"
+      ],
+      "answer": "🔁 Yes. Different meanings appear each time you return."
+    },
+
+    {
+      "id": "shouldRead",
+      "question": "Should I read this book?",
+      "keywords": [
+        "should i read this",
+        "is this book good",
+        "recommend this book",
+        "is it worth reading"
+      ],
+      "answer": "😊 If you appreciate thoughtful, character-driven stories about growth and hope — yes."
+    },
+
+    {
+      "id": "edit",
+      "question": "Can I edit or annotate this book?",
+      "keywords": [
+        "edit book",
+        "annotate",
+        "highlight",
+        "notes"
+      ],
+      "answer": "✏️ No. LifeArena supports reading only — no editing or annotations."
+    },
+
+    {
+      "id": "update",
+      "question": "Can this book be updated or removed?",
+      "keywords": [
+        "update book",
+        "remove book",
+        "delete book"
+      ],
+      "answer": "🔄 Yes, by the collection owner only."
+    },
+
+    {
+      "id": "disclaimer",
+      "question": "Is there any disclaimer for this book?",
+      "keywords": [
+        "disclaimer",
+        "copyright",
+        "personal use"
+      ],
+      "answer": "⚠️ This is an original creative work shared for personal and educational reading only."
+    }
+  ]
+}
