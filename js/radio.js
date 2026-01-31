@@ -516,7 +516,7 @@ function setupDragAndDrop() {
   };
 
   function loadFAQ() {
-    fetch("/faq.json")
+    fetch("./faq.json")
       .then(res => {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
