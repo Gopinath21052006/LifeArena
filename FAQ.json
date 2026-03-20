@@ -5,63 +5,77 @@
     "bookTitle": "THE END OF THE WORLD",
     "author": "Gopinath",
     "version": "1.1",
-    "lastUpdated": "2026-01-31",
+    "lastUpdated": "2026-03-20",
     "publishedDate": "03/10/2025"
   },
+
+  "book":[{
+
+  },{
+
+  }],
 
   
   "faqs": [
     {
-      "id": "aboutBook",
-      "question": "What is this book?",
+      "id": "book_overview",
+      "question": "What is this book about?",
       "keywords": [
-        "what is this book",
-        "what is the story",
+        "what is this book about",
         "tell me about the book",
-        "tell me about the end of the world",
-        "story information",
-        "about this book"
+        "book summary",
+        "what is the story",
+        "story overview",
+        "about this book",
+        "explain the book",
+        "what happens in the book"
       ],
-      "answer": "📘 This book is a coming-of-age story about Gopinath, born under a world-ending sky, who grows up fearing the apocalypse but learns through Mira's guidance to live fully, face challenges with courage, help his village, and discover love and hope even in the shadow of doom."
+      "answer": "📘 This book explores its central characters, themes, and storyline, offering a journey through emotions, challenges, and meaningful experiences that shape the overall narrative."
     },
 
     {
       "id": "author",
       "question": "Who wrote this book?",
       "keywords": [
-        "who wrote this book",
+        "who wrote this book","written" ,
         "who is the author",
         "author of this book",
         "creator",
         "written by whom"
       ],
-      "answer": "✍️ This book was written by Gopinath — drawing from personal themes of fear, growth, and finding hope in uncertain times."
+      "answer": "✍️ Written by Gopinath, an emerging voice in storytelling, this book captures the beauty of unspoken emotions and the complexity of human connection, blending reality and imagination into a powerful journey that readers don’t just read—but truly experience."
     },
 
     {
-      "id": "format",
-      "question": "What format is this book available in?",
+      "id": "book_format",
+      "question": "What formats is this book available in?",
       "keywords": [
         "book format",
+        "available formats",
         "pdf or epub",
         "file type",
         "book file",
-        "available format"
+        "in which format",
+        "format of the book",
+        "is it pdf or epub"
       ],
-      "answer": "📄 This book is available in both PDF and EPUB formats."
+      "answer": "📄 This book may be available in multiple formats such as PDF, EPUB, or other digital and print versions, depending on the source."
     },
 
     {
-      "id": "readOnline",
+      "id": "read_online",
       "question": "Can I read this book online?",
       "keywords": [
         "read online",
         "read in browser",
         "open in browser",
         "preview book",
-        "can i read online"
+        "can i read online",
+        "read without download",
+        "online reading",
+        "view book online"
       ],
-      "answer": "📖 Yes. You can read this book directly in your browser through the LifeArena website."
+      "answer": "📖 Yes, this book may be available for online reading through supported platforms or websites, allowing you to access it directly in your browser without downloading."
     },
 
     {
@@ -104,47 +118,55 @@
     },
 
     {
-      "id": "mood",
-      "question": "What kind of mood is this story?",
+      "id": "story_mood",
+      "question": "What is the mood of this story?",
       "keywords": [
         "story mood",
+        "emotional tone",
+        "what kind of mood",
         "emotional book",
+        "tone of the story",
         "calm or intense",
-        "emotional story",
-        "what kind of story"
+        "what kind of story",
+        "feeling of the story"
       ],
-      "answer": "🎭 This story has a reflective, hopeful mood — it's about overcoming fear and finding meaning despite existential threats."
+      "answer": "🎭 The mood of this story can vary depending on its themes and narrative, often ranging from light and uplifting to deep, emotional, or intense."
     },
 
     {
-      "id": "emotionalLevel",
+      "id": "emotional_impact",
       "question": "Will this book make me emotional?",
       "keywords": [
         "will this book make me emotional",
         "will i cry",
         "sad story",
         "emotional impact",
-        "is this emotional"
+        "is this emotional",
+        "does it have feelings",
+        "heart touching",
+        "is it emotional or light"
       ],
-      "answer": "💔 It might touch you deeply, but in a hopeful way. It explores fear and growth, not despair."
+      "answer": "💔 The emotional impact of this book depends on its themes and storytelling. It may evoke a range of feelings, from light and uplifting to deeply emotional or thought-provoking."
     },
 
     {
-      "id": "readingTime",
+      "id": "reading_time",
       "question": "How long does it take to read this book?",
       "keywords": [
         "reading time",
         "how long does it take",
-        "take to read",
+        "time to read",
         "how long to read",
         "book length",
-        "reading duration"
+        "reading duration",
+        "hours to finish book",
+        "is it a long book"
       ],
-      "answer": "⏱️ It's a medium-length read — perfect for a few thoughtful sittings."
+      "answer": "⏱️ The time it takes to read this book depends on its length and your reading pace. It could range from a quick read to several hours or multiple sittings."
     },
 
     {
-      "id": "lateNightRead",
+      "id": "late_night_read",
       "question": "Is this a good late-night read?",
       "keywords": [
         "late night read",
@@ -152,71 +174,88 @@
         "read at night",
         "night reading",
         "book to read at night",
-        "quiet read"
+        "quiet read",
+        "bedtime reading",
+        "is it suitable for night"
       ],
-      "answer": "🌙 Yes, especially if you're in a reflective mood. Its tone is calm and meaningful."
+      "answer": "🌙 This book can be a good late-night read depending on your preference, whether you enjoy something calming, engaging, or thought-provoking before sleep."
     },
 
     {
-      "id": "bestTime",
+      "id": "best_time_to_read",
       "question": "When is the best time to read this book?",
       "keywords": [
         "best time to read",
         "when to read",
         "best time for reading",
-        "good time to read"
+        "good time to read",
+        "when should i read this book",
+        "right time to read"
       ],
-      "answer": "☕ Anytime you're feeling reflective, uncertain, or in need of quiet hope."
+      "answer": "☕ You can read this book anytime, but it can be especially meaningful during quiet moments, when you're feeling reflective, or even during difficult times when you need comfort and a sense of lightness."
     },
 
     {
-      "id": "thinkingAfter",
+      "id": "thought_provoking",
       "question": "Will this book make me think?",
       "keywords": [
         "make me think",
         "will this book make me think",
         "deep thinking",
         "thought provoking",
-        "mindful reading"
+        "mindful reading",
+        "does it make you think",
+        "intellectual book",
+        "is it deep"
       ],
-      "answer": "🧠 Absolutely. It invites reflection on fear, meaning, and how we choose to live."
+      "answer": "🧠 This book may encourage reflection, offering ideas and perspectives that can make you think more deeply about its themes and messages."
     },
 
     {
-      "id": "stayWithYou",
+      "id": "memorable_impact",
       "question": "Does this story stay with you?",
       "keywords": [
         "stay with you",
         "stays with you",
         "memorable story",
         "after reading feeling",
-        "lingering story"
+        "lingering story",
+        "does it stick with you",
+        "lasting impression",
+        "unforgettable book"
       ],
-      "answer": "🍃 Yes. It lingers quietly — not loudly, but deeply."
+      "answer": "🍃 This story may leave a lasting impression, staying with you through its themes, characters, or the emotions it creates."
     },
 
     {
-      "id": "reRead",
+      "id": "re_read_value",
       "question": "Is this book worth re-reading?",
       "keywords": [
         "worth rereading",
         "read again",
         "re read",
-        "second read"
+        "second read",
+        "should i reread",
+        "is it worth reading again",
+        "multiple reads",
+        "repeat reading"
       ],
-      "answer": "🔁 Yes. Different meanings appear each time you return."
+      "answer": "🔁 This book can be worth re-reading, as you may notice new details, insights, or perspectives each time you revisit it."
     },
 
     {
-      "id": "shouldRead",
+      "id": "should_read",
       "question": "Should I read this book?",
       "keywords": [
         "should i read this",
         "is this book good",
         "recommend this book",
-        "is it worth reading"
+        "is it worth reading",
+        "should i try this book",
+        "is it a good read",
+        "do you recommend it"
       ],
-      "answer": "😊 If you appreciate thoughtful, character-driven stories about growth and hope — yes."
+      "answer": "😊 Whether you’ll enjoy this book depends on your interests, but if it matches your preferred genre or themes, it could be a rewarding and worthwhile read."
     },
 
     {
@@ -251,6 +290,142 @@
         "personal use"
       ],
       "answer": "⚠️ This is an original creative work shared for personal and educational reading only."
+    },
+    {
+      "id": "fallback",
+      "question": "Unknown question",
+      "keywords": [],
+      "answer": "🤔 I'm not sure about that yet, but I can help with summaries, mood, reading suggestions, and more. Try asking in a different way!"
+    },
+    
+    {
+      "id": "end_world_story",
+      "question": "The End of the World",
+      "keywords": [
+        "the end of the world",
+        "end world",
+        "world ending book",
+        "tell me about the end of the world",
+        "what is the end of the world about",
+        "explain the end of the world",
+        "story of the end of the world",
+        "end of world story"
+      ],
+      "answer": "🌍 Born under a sky that signals the end of the world, Gopinath grows up surrounded by fear and uncertainty. Guided by Mira, he learns to face life with courage, support his people, and discover love and hope—even when the future feels fragile."
+    },
+
+    {
+      "id": "nightmare_dream_story",
+      "question": "Nightmare Dream",
+      "keywords": [
+        "nightmare dream",
+        "dream book",
+        "jiraiya story",
+        "tell me about nightmare dream",
+        "what is nightmare dream about",
+        "explain nightmare dream",
+        "story of nightmare dream",
+        "nightmare dream story"
+      ],
+      "answer": "🌌 Jiraiya, a grieving father caught between worlds, journeys through haunting dreams and parallel realities in search of his lost daughter. Along the way, he uncovers deep truths about love, loss, and the fragile hope that connects every universe."
+    },
+
+    {
+      "id": "sunset_sunrise_story",
+      "question": "A Night Between Sunset and Sunrise",
+      "keywords": [
+        "a night between sunset and sunrise",
+        "sunset and sunrise",
+        "night between sunset",
+        "sunrise love story",
+        "tell me about a night between sunset and sunrise",
+        "what is sunset and sunrise book about",
+        "explain a night between sunset and sunrise",
+        "story of sunset and sunrise"
+      ],
+      "answer": "🌅 One night. One act of courage. Two strangers. A life changed forever. Between rain, silence, and the first light of sunrise, two hearts meet—and in that quiet moment, love begins to rewrite their destiny."
+    },
+
+    {
+      "id": "key_of_fate_story",
+      "question": "The Key of Fate",
+      "keywords": [
+        "the key of fate",
+        "key of fate",
+        "arin story",
+        "sci fi fate book",
+        "tell me about the key of fate",
+        "what is the key of fate about",
+        "explain the key of fate",
+        "story of the key of fate",
+        "key of fate story"
+      ],
+      "answer": "🔑 A high-intensity sci-fi thriller where Arin confronts hidden truths, deadly experiments, and a collapsing world. As secrets unravel and danger rises, he risks everything to save his family and uncover the mysterious key that holds the fate of Earth."
+    },
+
+    {
+      "id": "what_is_life_story",
+      "question": "What Is Life",
+      "keywords": [
+        "what is life",
+        "life book",
+        "rohan varun story",
+        "tell me about what is life book",
+        "what is what is life about",
+        "explain what is life book",
+        "story of what is life",
+        "what is life story"
+      ],
+      "answer": "🌱 A gentle and reflective story following Rohan and Varun as they navigate youth, responsibility, love, and life’s quiet struggles. Through simple moments and everyday experiences, it reveals that true meaning is often found in kindness, patience, and inner peace."
+    },
+
+    {
+      "id": "past_chose_love_story",
+      "question": "When the Past Chose Love",
+      "keywords": [
+        "when the past chose love",
+        "past chose love",
+        "sri maya story",
+        "love past story",
+        "tell me about when the past chose love",
+        "what is when the past chose love about",
+        "explain when the past chose love",
+        "story of when the past chose love",
+        "past chose love story"
+      ],
+      "answer": "❤️ A heartfelt story of Sri and Maya, whose journey begins with friendship and slowly blossoms into a deep, lasting love. Through challenges, sacrifices, and life’s hardships, they learn that true love is built on patience, courage, and unwavering support."
+    },
+
+    {
+      "id": "future_wife_story",
+      "question": "Future Wife",
+      "keywords": [
+        "future wife",
+        "lisa story",
+        "time travel love",
+        "tell me about future wife",
+        "what is future wife about",
+        "explain future wife",
+        "story of future wife",
+        "future wife story"
+      ],
+      "answer": "⏳ An emotional sci-fi love story where Lisa journeys across timelines to save the man she loves. As fate, sacrifice, and parallel realities collide, she discovers that even when destiny cannot change, love always finds a way to begin again."
+    },
+
+    {
+      "id": "between_platforms_story",
+      "question": "Between Two Platforms",
+      "keywords": [
+        "between two platforms",
+        "platform love story",
+        "train platform story",
+        "tell me about between two platforms",
+        "what is between two platforms about",
+        "explain between two platforms",
+        "story of between two platforms",
+        "between two platforms story"
+      ],
+      "answer": "🚉 A quiet girl. An unexpected moment. Two strangers whose connection slowly begins to grow. But as distance, silence, and misunderstandings take hold, their fragile bond is tested—reminding us that some stories begin by chance, but not every heart gets a second chance."
     }
   ]
 }

@@ -629,6 +629,68 @@ function answerFAQ(msg) {
     
     // Try FAQ first
     if (answerFAQ(lowerMsg)) return true;
+
+    // 🎵 SHOW SONG LIST FROM PLAYLISTS (FIXED FOR OBJECT STRUCTURE)
+    if (
+  // basic
+  lowerMsg.includes("song") ||
+  lowerMsg.includes("songs") ||
+
+  // playlist related
+  lowerMsg.includes("playlist") ||
+  lowerMsg.includes("playlists") ||
+
+  // listing
+  lowerMsg.includes("list") ||
+  lowerMsg.includes("show") ||
+  lowerMsg.includes("display") ||
+
+  // natural sentences
+  lowerMsg.includes("show songs") ||
+  lowerMsg.includes("list songs") ||
+  lowerMsg.includes("what songs") ||
+  lowerMsg.includes("available songs") ||
+  lowerMsg.includes("songs available") ||
+  lowerMsg.includes("give songs") ||
+  lowerMsg.includes("tell songs") ||
+  lowerMsg.includes("music list") ||
+
+  // casual / human style
+  lowerMsg.includes("what music") ||
+  lowerMsg.includes("any songs") ||
+  lowerMsg.includes("songs do you have")
+) {
+      let response = "🎵 <b>Available Playlists:</b><br><br>";
+    
+      for (const moodKey in playlists) {
+        const playlist = playlists[moodKey];
+    
+        response += `${playlist.emoji} <b>${playlist.name}</b><br>`;
+    
+        playlist.songs.forEach(song => {
+          response += `• ${song.name}<br>`;
+        });
+    
+        response += "<br>";
+      }
+    
+      say(response);
+      return true;
+    }
+    // 🎵 SHOW SPECIFIC PLAYLIST
+for (const moodKey in playlists) {
+  const playlist = playlists[moodKey];
+
+  if (
+    lowerMsg.includes(moodKey) ||
+    lowerMsg.includes(playlist.name.toLowerCase())
+  ) {
+    const songList = playlist.songs.map(s => `• ${s.name}`).join("<br>");
+    
+    say(`🎵 <b>${playlist.name}</b> playlist:<br>${songList}`);
+    return true;
+  }
+}
     
     // Music commands
     if (lowerMsg === "play" || lowerMsg.includes("play music") || lowerMsg === "start") {

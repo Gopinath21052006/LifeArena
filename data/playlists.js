@@ -49,6 +49,10 @@ export const playlists = {
         name: "Pathikichu",
         file: "music/Pathikichu.mp3",
         duration: "3:28"
+      },{
+        name: "Raajali (From 2. 0)",
+        file: "music/Raajali (From 2. 0) - A. R. Rahman.mp3",
+        duration: "4:10"
       }
     ]
   },
@@ -101,6 +105,36 @@ export const playlists = {
         name: "Vettaiyan Theme",
         file: "music/Vettaiyan-Theme.mp3",
         duration: "1:56"
+      },{
+        name : " 23 Theme ",
+        file:"music/23 Theme.mp3",
+        duration : "0.47"
+      },
+      {
+        name: "Finally we Met (Bumblinga Shortfilm Soundtrack) - Srj Sooraj",
+        file :"music/Finally we Met (Bumblinga Shortfilm Soundtrack) - Srj Sooraj.mp3",
+        duration:"1:08"
+      },
+      {
+        name: "Hansika Motwani INTRO  Aambala  Hiphop Tamizha",
+        file: "music/Hansika Motwani INTRO  Aambala  Hiphop Tamizha - Uvekh M.mp3",
+        duration: "1:11"
+      },{
+        name: "kokki kumaru entry bgm - MR BGM",
+        file: "music/kokki kumaru entry bgm - MR BGM.mp3",
+        duration: "1:09"
+      },{
+        name: "O Sahebaa - Shaan Rahman",
+        file: "music/O Sahebaa - Shaan Rahman.mp3",
+        duration: "2:25"
+      },{
+        name: "Selfie Pulla BGM ",
+        file: "music/Selfie Pulla BGM _ Cues (HQ) - Scored by Anirudh from Kaththi - Aruin Arun.mp3",
+        duration: "1:22"
+      },{
+        name: "Thalaivar 173 -Every HERO has a FAMILY ",
+        file: "music/Thalaivar 173 -Every HERO has a FAMILY - Pransh.mp3",
+        duration: "2:25"
       }
     ]
   },
@@ -128,6 +162,26 @@ export const playlists = {
         name: "Panjara Punch",
         file: "music/Panjara-Punch-MassTamilan.dev.mp3",
         duration: "2:45"
+      },{
+        name: "Eppadi Vandhaayo (From Aaromaley)",
+        file: "music/Eppadi Vandhaayo (From Aaromaley) - Siddhu Kumar.mp3",
+        duration: "2:49"
+      },{
+        name: "Pattuma ",
+        file: "music/Pattuma-MassTamilan.dev.mp3",
+        duration: "3:29"
+      },{
+        name: "Pavazha Malli ",
+        file: "music/Pavazha Malli.mp3",
+        duration: "4:12"
+      },{
+        name: "Singari",
+        file: "music/Singari.mp3",
+        duration: "3:28"
+      },{
+        name: "Zaalima - Arijit Singh",
+        file: "music/Zaalima - Arijit Singh.mp3",
+        duration: "4:59"
       }
     ]
   }
