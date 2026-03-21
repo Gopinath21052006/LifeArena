@@ -462,6 +462,7 @@ function setupDragAndDrop() {
   let startX = 0, startY = 0;
   let x = 0, y = 0;
 
+  // ✅ DESKTOP
   musicPopup.addEventListener("mousedown", (e) => {
     if (e.target.closest("button") || e.target.type === "range") return;
 
@@ -483,13 +484,38 @@ function setupDragAndDrop() {
   });
 
   document.addEventListener("mouseup", () => {
-    if (!isDragging) return;
-
     isDragging = false;
     musicPopup.style.cursor = "grab";
     musicPopup.style.transition = "transform 0.25s ease";
 
-    // save position
+    localStorage.setItem("radioPopupPos", JSON.stringify({ x, y }));
+  });
+
+  // ✅ MOBILE TOUCH SUPPORT 🔥
+  musicPopup.addEventListener("touchstart", (e) => {
+    if (e.target.closest("button") || e.target.type === "range") return;
+
+    isDragging = true;
+    const touch = e.touches[0];
+
+    startX = touch.clientX - x;
+    startY = touch.clientY - y;
+  });
+
+  document.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+
+    const touch = e.touches[0];
+
+    x = touch.clientX - startX;
+    y = touch.clientY - startY;
+
+    musicPopup.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
+  document.addEventListener("touchend", () => {
+    isDragging = false;
+
     localStorage.setItem("radioPopupPos", JSON.stringify({ x, y }));
   });
 
