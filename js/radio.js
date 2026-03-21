@@ -492,6 +492,21 @@ function setupDragAndDrop() {
   });
 
   // ✅ MOBILE TOUCH SUPPORT 🔥
+  // 🔥 Smooth + Optimized Drag
+// ✅ DEFAULT POSITION (bottom-right)
+  function setInitialPosition() {
+    const w = musicPopup.offsetWidth;
+    const h = musicPopup.offsetHeight;
+
+    x = window.innerWidth - w - 20;
+    y = window.innerHeight - h - 100;
+
+    musicPopup.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+  }
+
+  setTimeout(setInitialPosition, 100);
+
+  // ✅ TOUCH START
   musicPopup.addEventListener("touchstart", (e) => {
     if (e.target.closest("button") || e.target.type === "range") return;
 
@@ -500,32 +515,56 @@ function setupDragAndDrop() {
 
     startX = touch.clientX - x;
     startY = touch.clientY - y;
+
+    musicPopup.style.transition = "none";
   });
 
+  // ✅ TOUCH MOVE (SMOOTH + FIXED)
   document.addEventListener("touchmove", (e) => {
     if (!isDragging) return;
 
+    e.preventDefault();
+
     const touch = e.touches[0];
 
-    x = touch.clientX - startX;
-    y = touch.clientY - startY;
+    const w = musicPopup.offsetWidth;
+    const h = musicPopup.offsetHeight;
 
-    musicPopup.style.transform = `translate(${x}px, ${y}px)`;
-  });
+    let newX = touch.clientX - startX;
+    let newY = touch.clientY - startY;
 
+    // ✅ STRICT BOUNDS
+    const maxX = window.innerWidth - w;
+    const maxY = window.innerHeight - h;
+
+    newX = Math.max(0, Math.min(newX, maxX));
+    newY = Math.max(0, Math.min(newY, maxY));
+
+    x = newX;
+    y = newY;
+
+    musicPopup.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+
+  }, { passive: false });
+
+  // ✅ TOUCH END
   document.addEventListener("touchend", () => {
+    if (!isDragging) return;
+
     isDragging = false;
+    musicPopup.style.transition = "transform 0.25s ease";
 
     localStorage.setItem("radioPopupPos", JSON.stringify({ x, y }));
   });
 
-  // restore saved position
+  // ✅ RESTORE POSITION
   const saved = localStorage.getItem("radioPopupPos");
   if (saved) {
     const pos = JSON.parse(saved);
     x = pos.x || 0;
     y = pos.y || 0;
-    musicPopup.style.transform = `translate(${x}px, ${y}px)`;
+
+    musicPopup.style.transform = `translate3d(${x}px, ${y}px, 0)`;
   }
 }
 

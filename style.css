@@ -947,20 +947,21 @@ footer {
 
 .music-popup {
   position: fixed;
-  bottom: 160px;
-  right: 20px;
+  top: 0;
+  left: 0;
   width: 300px;
+  max-width: 90vw;
   background: #0d1117;
   border-radius: 16px;
   padding: 12px;
   color: white;
-  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
-  z-index: 9999;
+  z-index: 999999;
   cursor: grab;
   user-select: none;
+  touch-action: none;         /* 🔥 required */
+  will-change: transform;     /* 🔥 smooth */
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
-
 .music-popup.hidden {
   opacity: 0;
   pointer-events: none;
