@@ -6,16 +6,18 @@
     "cover": "images/covers/book cover.jpg",
     "file": "book/storybook1.pdf",
     "format": "pdf",
-    "upload_date":"03/10/2025"
-  },{
+    "upload_date": "03/10/2025"
+  },
+  {
     "title": "Nightmare Dream",
     "author": "GOPINATH",
     "description": "Jiraiya, a grieving father lost between worlds, chases his stolen daughter through haunting dreams and parallel realities, discovering love, loss, and the fragile hope that binds every universe together.",
     "cover": "images/covers/NIGHTMARE_DREAM(book_cover).jpg",
     "file": "book/NIGHTMARE_DREAM(story_book_2).pdf",
     "format": "pdf",
-    "upload_date":"14/10/2025"
-  },{
+    "upload_date": "14/10/2025"
+  },
+  {
     "title": "A Night Between Sunset and Sunrise",
     "author": "GOPINATH",
     "description": "One night. One act of courage. Two strangers. A life changed forever. Between rain, leaves, and sunrise, hearts meet, destiny unfolds, and love quietly rewrites everything. Will you witness their journey?",
@@ -23,52 +25,53 @@
     "file": "book/A_Night_Between_Sunset_and_Sunrise(story_book3).pdf",
     "format": "pdf",
     "upload_date": "25/10/2025"
-},
-{
+  },
+  {
     "title": "THE KEY OF FATE",
-    "author": "Gopinath ",
+    "author": "Gopinath",
     "description": "A high-intensity sci-fi thriller about Arin, a father fighting against NASA’s darkest secrets, mutated human weapons, and a collapsing world—risking everything to save his family and uncover the truth behind a key that controls the fate of Earth.",
     "cover": "images/covers/THE_KEY_OF_FATE.jpg",
     "file": "book/THE_KEY_OF_FATE(4).pdf",
     "format": "pdf",
     "upload_date": "06/12/2025"
-},
-{
+  },
+  {
     "title": "WHAT IS LIFE",
-    "author": "Gopinath ",
+    "author": "Gopinath",
     "description": "A gentle, reflective story about youth, responsibility, love, and quiet struggles. Through the lives of Rohan and Varun, the book explores how life often moves differently from our expectations, teaching us that true meaning is found in small moments, kindness, and inner peace.",
     "cover": "images/covers/WHAT_IS_LIFE.png",
     "file": "book/What_is_Life.pdf",
     "format": "pdf",
     "upload_date": "13/01/2026"
-}
-,{
-  "title": "WHEN THE PAST CHOSE LOVE",
-  "author": "Gopinath ",
- "description": "A heartfelt love story of Sri and Maya, whose bond grows from friendship to lifelong commitment, overcoming family conflict, sacrifice, and hardship to build a meaningful life together with love, courage, and hope.",
-  "cover": "images/covers/WHEN_THE_PAST_CHOSE_LOVE.png",
-  "file": "book/when_the_past_chose_love(6).pdf",
-  "format": "pdf",
-  "upload_date": "31/01/2026"
-},{
-  "title": "FUTURE WIFE",
-  "author": "Gopinath ",
-  "description": "A emotional science-fiction love story about Lisa, a woman who travels across timelines to save the man she loves. As destiny, sacrifice, and parallel realities collide, love proves stronger than time itself, showing that even when fate cannot change, hearts can begin again.",
-  "cover": "images/covers/FUTURE_WIFE.png",
-  "file": "book/Future_Wife(7).pdf",
-  "format": "pdf",
-  "upload_date": "25/02/2026"
-}
-,{
-  "title": "BETWEEN TWO PLATFORMS",
-  "author": "Gopinath",
-  "description": "A quiet girl. An unexpected meeting. What begins as a small accident slowly turns into something deeper between two strangers. But when distance, silence, and misunderstandings appear, their fragile connection is tested. Some stories begin by chance… but not every heart gets a second chance.",
-  "cover": "images/covers/BETWEEN_TWO_PLATFORMS.png",
-  "file": "book/Between_Two_Platforms(8).pdf",
-  "format": "pdf",
-  "upload_date": "15/03/2026"
-},
-{
+  },
+  {
+    "title": "WHEN THE PAST CHOSE LOVE",
+    "author": "Gopinath",
+    "description": "A heartfelt love story of Sri and Maya, whose bond grows from friendship to lifelong commitment, overcoming family conflict, sacrifice, and hardship to build a meaningful life together with love, courage, and hope.",
+    "cover": "images/covers/WHEN_THE_PAST_CHOSE_LOVE.png",
+    "file": "book/when_the_past_chose_love(6).pdf",
+    "format": "pdf",
+    "upload_date": "31/01/2026"
+  },
+  {
+    "title": "FUTURE WIFE",
+    "author": "Gopinath",
+    "description": "A emotional science-fiction love story about Lisa, a woman who travels across timelines to save the man she loves. As destiny, sacrifice, and parallel realities collide, love proves stronger than time itself, showing that even when fate cannot change, hearts can begin again.",
+    "cover": "images/covers/FUTURE_WIFE.png",
+    "file": "book/Future_Wife(7).pdf",
+    "format": "pdf",
+    "upload_date": "25/02/2026"
+  },
+  {
+    "title": "BETWEEN TWO PLATFORMS",
+    "author": "Gopinath",
+    "description": "A quiet girl. An unexpected meeting. What begins as a small accident slowly turns into something deeper between two strangers. But when distance, silence, and misunderstandings appear, their fragile connection is tested. Some stories begin by chance… but not every heart gets a second chance.",
+    "cover": "images/covers/BETWEEN_TWO_PLATFORMS.png",
+    "file": "book/Between_Two_Platforms(8).pdf",
+    "format": "pdf",
+    "upload_date": "15/03/2026"
+  },
+  {
     "title": "WHEN IT BECOME REAL",
     "author": "Gopinath",
     "description": "A reflective and philosophical story about self-discovery, dreams, and the quiet voice within us. Through Gopi’s journey and the presence of the Watcher, the story explores how our thoughts, fears, and hopes shape our reality, reminding us that understanding ourselves is the first step toward making our dreams real.",
@@ -76,15 +79,14 @@
     "file": "book/When_it_become_real.pdf",
     "format": "pdf",
     "upload_date": "01/04/2026"
-},
-{
-  "title": "WHENEVER IT RAINS",
-  "author": "Gopinath",
-  "description": "An emotional and heartfelt story about love, family, loss, and the memories that remain even after goodbye. Set beneath the peaceful hills of Dindigul, the story follows Akira, Yuki, Paari, Venitha, and little Lisa as they experience the beauty of togetherness and the pain of time slowly taking someone away. Through warmth, laughter, heartbreak, and rain-filled memories, the story reminds us that true love never truly disappears — it lives on whenever it rains.",
-  "cover": "images/covers/Whenever_it_Rains.png",
-  "file": "book/Whenever_it_Rains.pdf",
-  "format": "pdf",
-  "upload_date": "21/05/2026"
-}
-
+  },
+  {
+    "title": "WHENEVER IT RAINS",
+    "author": "Gopinath",
+    "description": "An emotional and heartfelt story about love, family, loss, and the memories that remain even after goodbye. Set beneath the peaceful hills of Dindigul, the story follows Akira, Yuki, Paari, Venitha, and little Lisa as they experience the beauty of togetherness and the pain of time slowly taking someone away. Through warmth, laughter, heartbreak, and rain-filled memories, the story reminds us that true love never truly disappears — it lives on whenever it rains.",
+    "cover": "images/covers/Whenever_it_Rains.png",
+    "file": "book/Whenever_it_Rains.pdf",
+    "format": "pdf",
+    "upload_date": "21/05/2026"
+  }
 ]
