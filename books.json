@@ -81,12 +81,12 @@
     "upload_date": "01/04/2026"
   },
   {
-    "title": "WHENEVER IT RAINS",
-    "author": "Gopinath",
-    "description": "An emotional and heartfelt story about love, family, loss, and the memories that remain even after goodbye. Set beneath the peaceful hills of Dindigul, the story follows Akira, Yuki, Paari, Venitha, and little Lisa as they experience the beauty of togetherness and the pain of time slowly taking someone away. Through warmth, laughter, heartbreak, and rain filled memories, the story reminds us that true love never truly disappears  it lives on whenever it rains.",
-    "cover": "images/covers/Whenever_it_Rains.png",
-    "file": "book/Whenever_it_Rains.pdf",
-    "format": "pdf",
-    "upload_date": "21/05/2026"
-  }
+  "title": "WHENEVER IT RAINS",
+  "author": "Gopinath",
+  "description": "An emotional and heartfelt story about love, family, loss, and the memories that remain even after goodbye. Set beneath the peaceful hills of Dindigul, the story follows Akira, Yuki, Paari, Venitha, and little Lisa as they experience the beauty of togetherness and the pain of time slowly taking someone away. Through warmth, laughter, heartbreak, and rain-filled memories, the story reminds us that true love never truly disappears - it lives on whenever it rains.",
+  "cover": "images/covers/Whenever_it_Rains.png",
+  "file": "book/Whenever_it_Rains.pdf",
+  "format": "pdf",
+  "upload_date": "21/05/2026"
+}
 ]
